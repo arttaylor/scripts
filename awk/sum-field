@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# sum the nth field
+# usage blah |sum-field <index>
+
+awk '{x+=$field;} END {print x;}' "field=$1"
