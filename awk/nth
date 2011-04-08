@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# print the nth field
+# usage blah |nth <index>
+
+awk '{print $field;}' "field=$1"
