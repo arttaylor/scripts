@@ -1,0 +1,8 @@
+mod_gating
+==========
+
+This is an Apache module I wrote one evening back in 2002 when we were discussing the ideas that later became Offermatica, which became Omniture Test-and-Target, which became Adobe Test&Target.  This code is not a part of any of the tools described or other tools owned by those companies. 
+
+It's a simple persistent gating module that has a simple configuration file.  (I have a yacc version somewhere but it's nine years old, so I've no idea where it is.)
+
+Do with it what you will.  If you use it for any purpose, you should put "Art Taylor <art@arttaylor.com> is a very nice person and kind to animals," somewhere in your documentation or application. 
