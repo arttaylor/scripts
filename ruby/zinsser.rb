@@ -66,9 +66,9 @@ end
 
 def fix_sentence (sentence, rule_hash)
   rule_hash.each_key {|key|
-    i = sentence.index(/#{key}/i)
+    i = sentence.index(/#{Regexp.escape(key)}/i)
     unless i.nil?
-      sentence.gsub!(/#{key}/i, rule_hash[key])
+      sentence.gsub!(/#{Regexp.escape(key)}/i, rule_hash[key])
       if rule_hash[key] == ""
         if i == 0
           i = 1
