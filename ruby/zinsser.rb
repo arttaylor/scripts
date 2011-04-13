@@ -52,11 +52,10 @@ def split_into_sentences (paragraph)
   sentences = []
   fragment = ""
   paragraph.each_char { | character |
+    fragment += character.to_s
     if character == "." or character == "?"
-      sentences << (fragment + character.to_s)
+      sentences << fragment
       fragment = ""
-    else
-      fragment += character.to_s
     end
   }
 
