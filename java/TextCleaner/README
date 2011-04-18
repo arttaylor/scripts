@@ -1,0 +1,12 @@
+This is a quick Java port of my text "editor" (Hah, I slay myself)
+zinsser.rb based on some of the suggestions in Howard Zinsser's On
+Writing Well.  I went with pluggable rule sets so I can throw S&W in
+there as well as others when I get around to it.  (I.e., you're better
+off forking the code.)
+
+mvn package; java -cp target/TextCleaner-1.0.jar com.arttaylor.util.text.cleaner.TextCleaner test-data/test.txt
+
+It definitely reflects my functional programming bent, with as many
+immutable data types as possible and side effects limited to the
+#main() class.  I tried to be at least reasonably idiomatic with Java.
+
