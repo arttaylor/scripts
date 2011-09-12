@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'bigdecimal'
+
+puts ARGV.inject(BigDecimal.new("0")){|sum,v| sum + BigDecimal.new(v)}.to_s("F")
