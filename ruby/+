@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+# Simple script to add all numbers on a command line
+# example: 
+# $ + 3.4 5 8175309
+# 8175317.4
+
 require 'bigdecimal'
 
 puts ARGV.inject(BigDecimal.new("0")){|sum,v| sum + BigDecimal.new(v)}.to_s("F")
